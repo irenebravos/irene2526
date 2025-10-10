@@ -12,26 +12,23 @@
 */
 
 
-public class Main {
-  public static void main(String[] args) {
-  
-	Float GB; GB = 12.0f;
-	Integer minutos; minutos = 30;
-	Float precioGB; precioGB = 0.80f;
-	Float precioMinutos; precioMinutos = 0.10f;
-	Double cuota; cuota = 57.8;
-  
-	Double precioFinal; 
-	precioFinal = ( GB * precioGB ) + ( minutos * precioMinutos );
-  
-	Double precioDeCuota;
-	precioDeCuota = precioFinal >= cuota;
-  
-	Double masCaro;
-	masCaro = (precioDeCuota >= cuota) == true;
-  
-  
-  
-    System.out.println("El precio final de la factura es " + precioFinal + " ¿y es mas caro?" + masCaro);
-  }
+public class Programa{
+
+    public static void main(String[] args){
+
+        Float gBUsados = 16.54f;
+        Integer minutosHablados = 5;
+        Float precioGB = 28.6f;
+        Float precioMinuto = 10.5f;
+        Float cuotaMensual = 100.0f;
+       final Float PRECIOLIMITE = 50.0f;
+
+       Float precioFinalFactura;
+       Boolean superaMaximo;
+
+       precioFinalFactura = (gBUsados * precioGB) + (minutosHablado  * precioMinuto) + cuotaMensual;
+       superaMaximo = precioFinalFactura > PRECIOLIMITE;
+
+    }
+
 }

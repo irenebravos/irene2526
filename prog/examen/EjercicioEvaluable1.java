@@ -15,22 +15,14 @@
 public class gimnasio{
 	public static void main ( String [] args) {
 
-		String nombre; nombre = "GYM";
-		Integer dias; dias = 4;
-		Float km; km = 10.0f;
-		Boolean agujetas; agujetas = true;
-		Integer Labdominales, Mabdominales, Xabdominales, Jabdominales, Vabdominales; 
-		Labdominales = 10;
-		Mabdominales = 20;
-		Xabdominales = 30;
-		Jabdominales = 40;
-		Vabdominales = 50;
-		Integer masAbdominales; 
-		masAbdominales = Labdominales > Mabdominales > Xabdominales > Jabdominales > Vabdominales;
+		Integer diasGimnasio;
+	String nombreGimnasio;
+	Double kmCinta;
+	Boolean tuveAgujetas = true;
+	Character diaSemanaMasAbdominales = 'J';
 
-		System.out.println ( "El gimnasio se llama" + nombre + " al que fui " + dias + 
-                     " la semana pasada, corri " + km + " km, y el dia que mas abdominales hice fueron " 
-                      + masAbdominales + " y termine la semana con " + agujetas " ." );
-
+	diasGimnasio = 5;
+	nombreGimnasio = "Estoy Cachas";
+	kmCinta = 5.2;
 	}
 }
