@@ -16,8 +16,6 @@ public class precio3 {
         precioFinal = precioIVA - ( precioIVA * descuento );
         
         System.out.println(precioFinal);
-        
-        
-        
+    
 	}
 }
