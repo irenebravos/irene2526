@@ -9,26 +9,26 @@ public class ejerciciosFechaHora {
           Enunciado: Crea un LocalDate con la fecha de hoy y muestra año, mes (numérico y nombre) y día.
           Pista: LocalDate.now(), getYear(), getMonthValue(), getMonth(), getDayOfMonth().
         */
-            LocalDate hoy = LocalDate.now();
-            System.out.println (hoy);
-            System.out.println (hoy.getMonth());
-            System.out.println (hoy.getYear());
-            System.out.println (hoy.getMonthValue());
-            System.out.println (hoy.getDayOfMonth());
+        LocalDate hoy = LocalDate.now();
+        System.out.println (hoy);
+        System.out.println (hoy.getMonth());
+        System.out.println (hoy.getYear());
+        System.out.println (hoy.getMonthValue());
+        System.out.println (hoy.getDayOfMonth());
 
         /* 2. Fundamentos con LocalTime
             Objetivo: crear horas y comparar.
             Enunciado: Crea LocalTime.now() y LocalTime.of(8, 30). Indica si “ahora” es antes o después de las 08:30.
             Pista: isBefore, isAfter.
          */
-            LocalTime hoy1 = LocalTime.now();
-            LocalTime hora1 = LocalTime.of( 8, 30 );
-            boolean antes1 = hora1.isBefore(hoy);
-            boolean despues1 = hora1.isAfter(hoy);
-            System.out.println (hoy1);
-            System.out.println (hora1);
-            System.out.println ("es antes " + antes1);
-            System.out.println ("es despues " + despues1);
+        LocalTime hoy1 = LocalTime.now();
+        LocalTime hora1 = LocalTime.of( 8, 30 );
+        boolean antes1 = hora1.isBefore(hoy);
+        boolean despues1 = hora1.isAfter(hoy);
+        System.out.println (hoy1);
+        System.out.println (hora1);
+        System.out.println ("es antes " + antes1);
+        System.out.println ("es despues " + despues1);
 
         /* 3. LocalDateTime básico
             Objetivo: combinar fecha y hora.
@@ -40,7 +40,6 @@ public class ejerciciosFechaHora {
         LocalDateTime junto = LocalDateTime.of(hoy2, hora2);
         LocalDateTime dentroDe2h = junto.plusHours(2);
         LocalDateTime dentroDe45min = dentroDe2h.plusMinutes(45);
-
         System.out.println(hoy2);
         System.out.println(junto);
         System.out.println(dentroDe2h);
@@ -61,18 +60,29 @@ public class ejerciciosFechaHora {
             Enunciado: Parsea "2025-12-05" a LocalDate y muestra el día de la semana.
             Pista: LocalDate.parse(...) con ISO por defecto, getDayOfWeek().
          */
+        String textoFecha = "2025-12-05";
+        LocalDate fecha = LocalDate.parse(textoFecha);
+        DayOfWeek diaSemana = fecha.getDayOfWeek();
+        String nombreDia = diaSemana.getDisplayName(java.time.format.TextStyle.FULL, new Locale("es", "ES"));
+        System.out.println("La fecha " + textoFecha + " corresponde a: " + nombreDia);
 
         /* 6. Formato “largo” en español
             Objetivo: formatos con texto y locale.
             Enunciado: Dada una fecha, muéstrala como "viernes, 17 de octubre de 2025".
             Pista: DateTimeFormatter.ofPattern("EEEE, d 'de' MMMM 'de' yyyy", new Locale("es","ES")).
          */
+        LocalDate fecha = LocalDate.of(2025, 10, 17);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern( "EEEE, d 'de' MMMM 'de' yyyy", new Locale( "es", "ES" ) );
+        String fechaFormateada = fecha.format(formatter);
+        System.out.println(fechaFormateada);
 
         /* 7. Parseo con patrón propio
             Objetivo: parsear formatos no ISO.
             Enunciado: Parsea "17-10-2025 09:30" a LocalDateTime.
             Pista: Patrón "dd-MM-yyyy HH:mm" con DateTimeFormatter.
          */
+
+
 
         /* 8. Cálculos con fechas (bisiesto + fin de mes)
             Objetivo: propiedades y aritmética.
