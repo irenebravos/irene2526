@@ -1,0 +1,266 @@
+(Transcrito por TurboScribe.ai. Actualizar a Ilimitado para eliminar este mensaje.)
+
+Buenos días, vamos a hablar del desarrollo software, es decir, del ecosistema, el entorno de los elementos que rodean al desarrollo de aplicaciones informáticas y que tenemos que conocer para poder hacer bien nuestro trabajo. La selección de responsabilidad, si equivocaré, habrá errores, meteré la pata, las instrucciones serán precisas, faltarán elementos, y la coordinación de ATI como futuro profesional informático, completarlo, revisarlo, y sobre todo, completarlo con el servicio crítico, por si hay errores y demás. Los contenidos que vamos a ver en esta presentación son los siguientes.
+
+Por primero, vamos a hablar del ordenador, que es nuestra herramienta de trabajo, y vamos a ver en qué momento esto está compuesto y cómo se relaciona con los programas que tenemos que desarrollar. Luego hablaremos de los lenguajes de programación, que es la forma en la que expresamos los programas. Y, en tercer lugar, veremos lo que es la ingeniería de software, es decir, cómo estas actividades que nosotros hacemos para crear los programas se enmarcan dentro de un proyecto mucho más grande o puede ser más cumplidor, en el que podemos participar desde grupos pequeñitos de cinco personas en un equipo, o grupos más grandes de cien personas en varias organizaciones.
+
+Al final, lo que vamos a ver es las herramientas que tenemos que utilizar para hacer bien nuestro trabajo y cómo le sacamos el mayor partido. En primer lugar, si esto deja de dar botes, vamos a ver nuestro primer objetivo respecto al ordenador, es ser capaces de reconocer qué relación tienen los programas que nosotros hacemos con los elementos de hardware que conforman un ordenador, y para eso tendremos que entender primero qué es un ordenador y qué partes tiene. Lo que utilizamos para ello es la arquitectura de Von Neumann, que nos lo va a explicar bastante bien, pero empezaremos primero con una definición de ordenador.
+
+El ordenador es una máquina que procesa datos, es decir, es una máquina que va a recibir datos de entrada y va a generar datos de salida. Idealmente serán los datos de salida correctos, conforme a lo que queramos hacer en ese momento. Lo dejamos con esta definición y volvemos a ver qué son los datos y qué tipo de datos hay.
+
+¿Qué elementos conforman un ordenador? Bueno, en 1945 John Von Neumann, que estaba trabajando en el Instituto Tecnológico de Massachusetts, definió una arquitectura para crear ordenadores. En aquel momento los ordenadores de Von Neumann eran incluso menos como los que tenemos ahora, así que fue bastante visionario. En su utilidad, la máquina, que consistirá en un ordenador, tendría que consistir en una única central del proceso, una memoria principal, donde se encontrarían los datos y las instrucciones, y luego varios específicos que podrían ser de entrada o de salida de datos o de entrada y salida a la vez. 
+
+Esto es lo que conocemos como la arquitectura Von Neumann y que es la que hoy en día se utiliza en la mayoría de los ordenadores. Von Neumann en aquellos tiempos no había ni chips como el que tenemos aquí representado, ni por supuesto tarjetas de memoria como la que veis ahí. Digamos que el concepto de la arquitectura es mucho más conceptual. 
+
+Aquí representamos la CPU, nuestro recuerdo de procesos y los elementos que tienen que ver con la memoria principal. La memoria principal, con este recuerdo azul, y los periféricos de entrada y salida los tenemos aquí. Estos tres elementos, CPU, la memoria principal y periféricos de entrada y salida, están conectados por el cuarto elemento de la arquitectura Von Neumann, que son los buses de comunicación, que son estas flechitas que tenemos por aquí.
+
+Así que la arquitectura Von Neumann consta de cuatro elementos, unidad central de proceso, memoria principal, periféricos de entrada y salida y buses de comunicación. La unidad central de proceso, su misión es interpretar las instrucciones del programa y ejecutarlas. Para ello tiene la unidad de control que le va a permitir leer y pasar una instrucción a la siguiente, los registros que van a guardar los datos con los que vamos a realizar las operaciones y la unidad aritmético lógica que es la que realiza las operaciones aritméticas, suma, resta, multiplicación y más, o lógicas, AND, OR, NOT, XOR, lo que necesitemos.
+
+Esta es la unidad central de proceso. El siguiente elemento es la memoria principal. La memoria principal es un conjunto de celdas, ahora mismo muchísimas celdas, gigabytes de memoria, nos caen miles de millones de datos y en cada una de ellas podemos guardar o bien un dato o bien una instrucción. 
+
+La arquitectura de Von Neumann utiliza la misma memoria para los datos y para el programa. Hay otra arquitectura que es la arquitectura de Harvard que estableció utilizar dos memorias distintas, una para el programa y otra para los datos, pero no es el caso. La mayoría de los ordenadores utilizan la misma memoria para los datos y para las instrucciones. 
+
+Datos e instrucciones van a compartir el mismo espacio de memoria. Esos datos y esas instrucciones vienen y van desde los periféricos de entrada y de salida. Es decir, si un ordenador es una máquina que procesa datos, por algún lado tienen que entrar los datos de entrada, por ejemplo el periférico de entrada, y tendremos que mostrar los resultados por un periférico de salida.
+
+Hay periféricos que valen para las instrucciones para la entrada y para la salida. Veamos ejemplos. Un periférico de entrada sería el teclado o el ratón o un joystick o un micrófono.
+
+Esos periféricos permiten meter datos dentro del ordenador. Un periférico de salida sería, en este caso, la pantalla que solamente muestra información. Podría ser también una robot que muestre información en audio o puede ser una impresora. 
+
+Esos serían periféricos de salida. Tenemos periféricos que hacen las dos cosas. Por ejemplo, el disco duro. 
+
+En el disco duro podemos leer datos de entrada, escribir en él ficheros o datos de salida. Es un periférico que hace las dos cosas. Lo mismo ocurre, por ejemplo, con la tarjeta de red. 
+
+Una tarjeta de red nos permite recibir datos de entrada y al mismo tiempo emitir o enviar lo que serían datos de salida. Todos estos elementos conforman la arquitectura de Von Neumann y están conectados por los buses que son el conjunto. Hay tres tipos de buses.
+
+Bus de datos que llevan los datos de un sitio a otro, por ejemplo, del periférico de entrada a la memoria principal o de la memoria principal a los registros para que salgan operaciones. Hay buses de dirección que indican en qué sitio de la memoria tienen que guardarse o en qué sitio tienen que leerse los datos. En el bus de control indican si lo que hacemos es leer o escribir.
+
+Es decir, en el bus de datos va el dato, por ejemplo, que introdució el bus urbano. El de dirección dice si lo que hay que leer o escribir. Y el bus de control dice si lo que hay que hacer es leer o escribir.
+
+Bien, estos elementos tenemos que ser fáciles de reconocerlos. Seríais capaces de asociar alguno de estos elementos que tenemos aquí con la arquitectura de Von Neumann. Es decir, ¿a qué elemento asociarías la RAM? Para el vídeo y mira a ver si eres capaz de completarlo.
+
+Pero lo que necesitamos saber nosotros es, ¿qué pintan los programas dentro de la arquitectura de Von Neumann? ¿Cómo funciona? Cuando nosotros escribimos un programa, vamos a llamarlo ahora en código máquina. Tenemos ese código máquina. Tenemos ese programa. 
+
+Ese programa tiene que cargarlo en memoria principal. Por ejemplo, podría estar en el disco duro y pasamos a la memoria principal del ordenador. A través de los buses, los periféricos de salida que tenemos llega a la memoria.
+
+El siguiente paso es que la CPU se ponga a ejecutar cada una de las instrucciones del código que hemos escrito. Lee la primera para lo que tenga que hacer. Ejecuta las instrucciones que puede llevar a leer datos de entrada, a realizar operaciones con la unidad aritmetológica o a escribir datos de salida o a mover datos entre una posición de memoria y otra.
+
+Cualquiera de esas opciones. Cuando el programa ve que necesita datos de entrada, las instrucciones se cargan a memoria desde el periférico. Es decir, si el programa establece leer el teclado, el dato que hay en el teclado irá desde el periférico de entrada, que es el teclado, hasta la memoria principal.
+
+Cuando hay que hacer operaciones, pues es la ALU la que realiza esos cálculos. Si el programa dice que hay que sumar o que multiplicar, pues la CPU leerá los datos de la memoria principal, los encontrará en los registros de la unidad aritmeticológica, y los mandará así en el par que suene o registre lo que tenga que hacer. Y luego cogerá el resultado que estará en un registro de la ALU y se lo pasará a la memoria para guardar.
+
+Y finalmente lo que suelen hacer los programas, las instrucciones, es decir, que los resultados de la memoria principal que se encuentran ahí, se muestren por algún periférico de salida. Imprimidos en la consola, imprimidos por la impresora, lo que necesitamos. Esa es la relación que hay entre los programas que escribimos con la arquitectura de nuestros ordenadores. 
+
+Manejamos periféricos de entrada y esclera, memoria principal y la memoria central de procesos. Vamos a ver ahora cómo escribimos nuestros programas. Utilizamos para ello los lenguajes de programación. 
+
+El objetivo es que seas capaz de clasificar los distintos lenguajes de programación y sus características. Además tenemos que ser capaz de diferenciar varios conceptos. Lo que es el código fuente, que es lo que nosotros escribimos. 
+
+Lo que es el código objeto y lo que es el código que ejecuta la máquina. Porque nosotros escribimos en Java, la máquina, como tal, en la CPU, no puede interpretar estas instrucciones. Hay en medio de todo un proceso que tenemos que conocer.
+
+Y por otro lado, no todos los lenguajes funcionan igual. Hay otro sistema que requiere la interpretación y el uso de máquinas virtuales. Vamos a empezar como siempre con una definición.
+
+Un programa. Vamos a un programa, a un algoritmo escrito en un algoritmo de programación. Esta definición es fácil, pero deberíamos que sepamos qué es un algoritmo.
+
+Un algoritmo es solamente una secuencia de instrucciones. Es verdad, deberían conseguir algún resultado. Hay algoritmos que funcionan y algoritmos que no. 
+
+Y de hecho haremos muchos que no nos van a funcionar, al menos al principio. Pero para simplificarlo, a una secuencia de instrucciones le llamaremos algoritmo. ¿Cómo deben ser los algoritmos? Pues en primer lugar deben ser eficaces. 
+
+Estos son características que nos gustaría que tuvieran. Un algoritmo es eficaz si consigue sus objetivos. Si el algoritmo tiene que identificar el número primo menos que mínimo, pues si lo consigue bien y si no lo consigue, no será eficaz.
+
+Pero además tiene que hacerlo de una forma finita. Es decir, tiene que hacerlo con un tiempo limitado y con un uso de memoria limitado. No puede ser que el algoritmo esté infinito tiempo, es decir, en un bucle infinito trabajando, y que requiere una memoria infinita. 
+
+En ese caso el algoritmo no va a terminar y por lo tanto tampoco va a ser eficaz. Pero es muy habitual, nos lo trata en bucles infinitos, y es también desgraciadamente muy habitual que cuando empezamos tengamos perdidas de memoria, memory leaks, que hace que poco a poco cada vez que ejecutamos el programa estemos consumiendo memoria y dejándola inutilizada. Tendremos que tener cuidado con eso.
+
+Tercera característica. El algoritmo debe ser claro. Es decir, la instrucción tiene que ser inédita. 
+
+Tiene que especificar claramente y sin duda qué es lo que tiene que hacer. Si no, entramos en la duda de qué quiere decir esto, qué es lo que tendría que hacer yo con esa instrucción. Bien, y por último es conveniente que el algoritmo sea eficiente. 
+
+Es decir, que alcance sus objetivos con un uso razonable de tiempo y de memoria. Según la secuencia de instrucciones aplicamos lo mismo a un programa, porque el programa no es más que un algoritmo, que en lugar de expresarlo en lenguaje natural lo expresamos en un lenguaje de programación y tienen que ser eficaces, finitos, claros y eficientes. Veamos el proceso. 
+
+Nosotros vamos a escribir nuestros algoritmos, nuestros programas utilizando código fuente. En este curso eso va a ser el lenguaje Java, pero podría ser el lenguaje C, en Python, en cualquier otro, a lo que escribimos los seres humanos, los programadores, le llamamos código fuente. Bueno, el ordenador no puede entender sentencias en inglés como class main o public static void de un sistema de println, que son en inglés. 
+
+Y para llegar a algo con unos criterios que puede interpretar, vamos a hacer un proceso de compilación. Para compilar utilizamos un programa que se llama compilador. El compilador coge el código fuente y genera el código objeto.
+
+Las máquinas hoy en día no pueden ejecutar el código objeto directamente. Necesitan que el sistema operativo añade unas cuantas cosas para que pueda cargarse memoria y descargarse memoria y funcionar adecuadamente. Este proceso junto con otros trozos del código objeto que hay en el programa, le llamamos linkado.
+
+Hay un programa que linka, y lo que hace es añadir algunas cabeceras, utilizar otros códigos objetos que estén hechos para configurar al final el código ejecutable. Pero tanto el código objeto que produce el compilador, como el código ejecutable que produce el linkador, ya son código máquina que las máquinas que las ejecutan pueden interpretar. Es decir, nosotros escribimos código fuente, al compilar obtenemos código objeto, al linkar obtenemos código ejecutable, y estos dos últimos, el código objeto y el código ejecutable, son ya código máquina.
+
+Pero como decíamos, no siempre es así. En nuestro caso con Java, funciona de una manera distinta. Como escribimos en Java, es un tema histórico porque ya tenemos un clase. 
+
+En Java, generamos el código fuente que escribimos nosotros, y lo compilamos, igual que hemos hecho en la diapositiva anterior, para obtener un código objeto que se llama .class, pero no lo linkamos. En lugar de eso, llamamos a otro programa que es la máquina virtual de Java para que lo interprete. Es decir, lo que entra en la CPU no es nuestro código objeto, sino la máquina virtual de Java que ha hecho alguna empresa, y es la máquina virtual nuestro programa el que leerá nuestro código objeto e interpretará qué es lo que tiene que hacer.
+
+Solo que haremos un proceso de lenguaje interpretado. Hay de hecho otros lenguajes en los que la máquina, la llamamos intérprete, interpreta directamente el código fuente, ni siquiera requiere pasar .class. Pero en Java, que es lo que vamos a utilizar, necesitamos hacer un proceso de compilación. Este proceso lo vemos aquí en detalle. 
+
+Escribimos el código fuente .java y lo compilaremos llamando a un programa que se llama javac, diciendo dónde está el fichero que hemos escrito. Esto va a generar un archivo que se llama .class con el mismo nombre, en este caso mi programa .class, y le puedo pedir a la máquina virtual de Java, que se llama Java, que ejecute mi .class. Ella lo va a leer, lo va a interpretar y va a mandar las instrucciones al procesador. En una vez visto cuál es el proceso por el que generamos el código máquina que va a ejecutar nuestro ordenador, vamos a ver los distintos tipos de lenguajes de programación que hay. 
+
+Hay muchas formas de clasificarlos y muchas se solapan y tienen conceptos parecidos, pero bueno, vamos a ver estas 5 y tenemos que ser capaces de aplicar a los lenguajes que nosotros vamos a utilizar. Vamos a ver cada uno de estos 5 tipos de clasificación. Primero, la clasificación por programa de generación o nivel de aprestación. 
+
+Las generaciones son un concepto histórico. Las primeras generaciones fueron los primeros lenguajes, las segundas los segundos, terceros, llegamos a la cuarta que ya va por otro camino. La primera generación, cuando empezamos con los ordenadores, solamente se podía escribir el código máquina. 
+
+Los primeros iban cableados, luego utilizamos cintas perforadas, tarjetas con agujeritos, que al fin y al cabo representaban los unos y los ceros que queríamos meter en el ordenador. Eso es lo que llamamos programación de bajo nivel, porque no tenía casi abstracción. Había que conocer exactamente qué instrucciones tenía la máquina y qué secuencia de unos y ceros representaba cada instrucción y cada dato. 
+
+Horroroso. Menos mal que tenía poca memoria, entonces los programas eran cortos, eso sí. Hubo luego una segunda generación en la cual apareció el lenguaje ensamblador. 
+
+Si la máquina tenía una instrucción que era una determinada secuencia de unos y ceros, en lugar de escribir esos unos y ceros, podíamos escribir una secuencia generalmente de tres letras, LDAAMV, que nos permitía luego traducirla a la secuencia de unos y ceros. Para el programador era más fácil acordarse del código mnemotécnico de la instrucción que de la instrucción en unos y ceros o del número que representaba. Esos eran los lenguajes de segunda generación que eran tremendamente dependientes del procesador que se estaba utilizando y es lo que llamamos un nivel de abstracción medio.
+
+Ahora no sería medio, ahora es un nivel de abstracción en ensamblador bastante grande, pero todavía programamos en ensamblador cuando hay que programar chips que están embebidos y otros elementos que no tienen lenguajes de alto nivel para trabajar con ellos. Aparecieron luego los lenguajes de tercera generación, que son lenguajes con un nivel de abstracción muy alto. C, C++, Java, son lenguajes que se expresan en una sintaxis metílica. 
+
+Utilizamos estructuras como if-then-else, for-if-do, etc. Esto es lo que haremos con lenguajes que son más fáciles de programar, es decir, no tenemos que conocer tanto el C o el C++ por el que trabajamos y además permite que el mismo lenguaje se pueda aplicar a distintos tipos de ordenadores, a distintos niveles de procesos, aunque tengan distintas instrucciones. Solo lo hace el compilador que adapta al proceso para el que vamos a hacer el programa. 
+
+Esto no significa que un programa hecho en C valga para cualquier CPU, vale para la CPU para la que estamos trabajando, pero otros programas como Java sí pueden hacerlo. En esta parte histórica, aquí como veis en la parte de tercera generación, hay lenguajes que son muy antiguos, desde 1972, y hay lenguajes que son más modernos, PHP desde la década de los noventa, incluso lenguajes recién salidos como Kotlin entrarían en lenguajes de tercera generación. Llamamos lenguajes de cuarta generación a lenguajes que tienen un propósito específico. 
+
+Los de tercera generación que habéis visto valen para cualquier tipo de programa, pero a partir de 1970 se desarrolló por ejemplo el lenguaje SQL. El lenguaje SQL solo vale para hacer consultas a las partes de datos. Luego apareció más adelante el lenguaje GSR que solamente vale para hacer cálculos estadísticos, o MATLAB que solo vale para hacer cálculos matemáticos, o HTML que solo vale para hacer páginas Google.
+
+Esos lenguajes que solo valen para una cosa, que tienen un propósito específico, los llamamos lenguajes de cuarta generación. Y luego también hay otros lenguajes más avanzados, los llamamos de quinta generación, que están basados en restricciones. No quiere decir que sean más modernos, Lisp es bastante antiguo, pero luego se basa en restricciones lógicas de lo que puede o lo que no puede hacer, y ahí clasificamos estos lenguajes.
+
+El segundo nivel de clasificación serían los paradigmas. El paradigma es algo difícil de explicar, es lo que el diseñador del lenguaje tiene en la cabeza cuando está pensando en cómo tiene que funcionar. Me explico mejor con los ejemplos.
+
+El paradigma más habitual es la programación imperativa. En la programación imperativa el lenguaje sirve para dar instrucciones a la CPU de lo que tiene que hacer. Es decir, suma esto, lee esto, escribe esto en pantalla. 
+
+Esos son los lenguajes imperativos. Java es un lenguaje imperativo. Hay otro tipo de lenguajes que llamamos declarativos. 
+
+SQL es un lenguaje declarativo. En SQL decimos lo que queremos conseguir. Quiero que me muestres los nombres y los apellidos y el saldo de los clientes que viven en Cáceres. 
+
+Y ya se apaña del lenguaje como lo tiene que hacer. No le decimos cómo, sino lo que queremos. Ese es el paradigma declarativo.
+
+Otros lenguajes declarativos son Prolog y Haskell. Apareció luego el paradigma de la programación entre objetos. Es verdad, Java es imperativo, pero también sigue el paradigma de programación entre objetos. 
+
+Veremos a lo largo de este curso de programación entre objetos cómo se llama. Básicamente, en lugar de manejar sólo lo que hacemos en la declaración imperativa en los programas declarativos, como los textos o los valores booleanos, podemos programar utilizando clientes, coches, unicornios. Definimos los objetos que queremos utilizar en nuestro programa.
+
+Y hay otro tercer paradigma, que es la programación funcional, en la que lo que hacemos es manejar las funciones más de carácter matemático y combinadas. Hay más paradigmas, pero vamos a arreglar con estos cuatro. Otra forma de clasificar los lenguajes, pues por cómo se ejecutan. 
+
+Hemos dicho que hay lenguajes que necesitan una compilación limitada, como es el caso de C++, lenguajes que son interpretados, como es el caso de Java, o los casos de PHP, Python, Bash o SQL. Los lenguajes no tienen un proceso de compilación. Si Java tiene un proceso de compilación, PHP no, Python tampoco. 
+
+Y son interpretados por un siguiente programa, por una máquina virtual o por un PPT, que va a ejecutar realmente las situaciones. Y más criterios de clasificación. Por ejemplo, si el programa que resulta de utilizar ese lenguaje es dependiente del sistema operativo. 
+
+Por ejemplo, si programamos en C o en C++, los programas que hacemos no se pueden ejecutar en otro sistema operativo. Si lo he hecho para Windows, no va a funcionar en Windows. Si lo he hecho para MacOS, no va a funcionar en Windows.
+
+Hay lenguajes interpretados, como es el caso de MacOS, que como es un lenguaje específico para manejar sistemas operativos UNIX y PTP como Linux, por ejemplo, puede utilizarse para manejar sistemas operativos Windows. Por ejemplo, los programas que hacemos en MacOS también son dependientes de los programadores que tiene el sistema operativo. Pero otros se diseñarán para ser independientes. 
+
+Si yo hago un programa en Java, el mismo programa que he hecho en MacOS puede ser utilizado en distintas máquinas con distintos sistemas operativos y no tengo que reprogramar. Lo mismo le ocurre a casi todos los lenguajes que son interpretados. El programa en PHP se puede ejecutar sobre otras máquinas Windows. 
+
+El mismo programa en Python. El SQL sería indiscutible, pero digamos que se puede ejecutar sobre distintas bases de datos. Yo paso una sentencia SQL para DAQ y se puede ejecutar, si está bien diseñada, para una base de datos de MSPT o de PBOX.
+
+Y podemos clasificar también los lenguajes programadores en función del propósito para el que nos sirven. Hay lenguajes que sirven para todo. Llegamos a lenguajes de propósito general. 
+
+Vamos a hacer cualquier tipo de programa, como CSS, para el que vamos a utilizar. Lenguajes de propósito general, como he dicho, SQL solo nos vale para consultar, insertar, borrar bases de datos. HTML nos permite hacer páginas web, pero no nos va a permitir hacer una gestión de inventario. 
+
+R nos permite hacer cálculos estadísticos o mandar aplicaciones de carácter matemático. Estos son lenguajes de propósito específico. En definitiva, tenemos que ser capaces de clasificar los lenguajes en cualquiera de estos criterios.
+
+Ya hemos visto cómo funcionan los programadores y su relación con los programas. Hemos visto las características de los lenguajes de programación y vamos a hablar ahora de lo que es la ingeniería de software. El objetivo de esta parte de la presentación es que seamos capaces de identificar las fases que hay que realizar cuando creamos una aplicación de software. 
+
+Estas fases las vamos a organizar en metodologías. Tenemos que reconocer varias de las metodologías más importantes y en qué condiciones deberíamos utilizarlas. Esto queda muy abstracto cuando se tiene poca experiencia en el desarrollo de aplicaciones, pero es imprescindible que al menos empecemos a conocer cómo se desarrollan estas aplicaciones y qué fases y qué metodologías hay. 
+
+Vamos a por ello. Primera definición. ¿Qué es la ingeniería de software? Pues consiste o es la ciencia en la que se aplican técnicas de ingeniería a la programación. 
+
+¿Y qué técnicas aplica la ingeniería? Bien, si pensamos en lo que es el desarrollo de un producto como un coche o la construcción de un edificio, técnicas de ingeniería industrial o de ingeniería arquitectónica, pues ahí hay una fase en la que hay primero un detalle, se coge un plano, se planifica las acciones que hay que desarrollar. Luego una fase en la que se buscan las soluciones técnicas. Si lo que quiero es crear este vehículo, ¿qué tipo de motor tenemos que poner? ¿Qué potencia deberá tener? ¿Qué combustible voy a utilizar? ¿Cómo van a ser los equipos de la casa? ¿Qué materiales tenemos que emplear ahí? Estas técnicas, junto con otras técnicas de planificación de las actividades, control de calidad, etcétera, son las técnicas que aplican ingeniería de software al desarrollo de las aplicaciones informáticas. 
+
+Tenemos que conocer el ciclo de vida. Llevamos a cabo una serie de acciones y actividades que tenemos que hacer para crear las aplicaciones.
+
+Son siempre las mismas. Si el proyecto es grande, las haremos todas con mucho detalle. Si el proyecto es pequeño, pues algunas prácticamente ni las sacamos.
+
+O que incluso nosotros siempre hemos probado en alguna parte del proyecto con lo que nosotros tenemos que hacer, como el diseño o la construcción. ¿Cuáles son estas actividades? Bueno, en primer lugar tendremos que hacer el estudio de la viabilidad del sistema informático que queremos hacer. Si fuera una aplicación para la gestión de advertencias, va a salir a un precio que sea competitivo. 
+
+Es técnicamente viable. Se nos puede ocurrir que sería una aplicación capaz de leer normalmente y así no tener que teclear. Pero técnicamente no es viable.
+
+Tenemos que analizar la viabilidad económica y técnica del sistema que nos estamos planteando. En segundo lugar, hay una fase de análisis del sistema informático. En esta fase, lo que analizamos es qué queremos construir.
+
+Ahí viene el cliente, es el que establece los clientes del proyecto. Pues tendría que ser capaz de gestionar los clientes, de emitir las facturas, de conectarse con el banco de pantalla, de presentar una interfaz que pueda acceder a personas con determinados grados de discapacidad. Estos son los requerimientos del sistema. 
+
+En esta fase, los recogemos, los estructuramos y analizamos si son viables o no son viables. Una vez que tenemos este análisis, la siguiente fase es el diseño del sistema informático. Esos son las instrucciones técnicas, es decir, cómo vamos a crear ese sistema.
+
+Sin empezar a analizar qué es el diseño que tenemos que construir. Qué lenguas tenemos que utilizar, qué patrón de datos, qué tipo de paradigma de programación, qué librería podemos usar, quién va a ser el equipo. Todo eso entra en la fase de diseño.
+
+Cuando sabemos cómo vamos a hacerlo, entramos en la fase de construcción y programamos aquello que hemos diseñado. Una vez que lo tenemos programado, entramos en una fase de pruebas y de implantación. Lo ponemos en marcha, porque no basta con que la aplicación funcione en su ordenador, tiene que funcionar el sistema del cliente.
+
+Es lo que llamamos implantación y una serie de pruebas para comprobar que todo funcione correctamente. A partir de ahí entramos en lo que es el mantenimiento del sistema de información, conociendo los valores, aportando nueva funcionalidad, hasta que ya desaparece y termina su ciclo de vida. Esas son las actividades.
+
+Ahora, en cómo nos organizamos dentro de lo que es la metodología. Por ejemplo, las primeras metodologías que se utilizaban, y que se utilizan, es lo que llamamos metodología encajada. ¿Qué es la forma lógica de hacerlo? Primero hacemos un estudio de viabilidad, a ver cómo se resuelve el problema, y si esto es técnica y económicamente viable.
+
+Hacemos luego el análisis para ver lo que tenemos que hacer, qué es lo que quiere el cliente. Hacemos el diseño para ver cómo lo vamos a construir, lo desarrollamos, probamos que funcione bien, lo ponemos en marcha en las instalaciones del cliente y empezamos por el mantenimiento, la corrección de errores, las mejoras que hay que hacer, los cambios que lleguen. Esta es la metodología tradicional y parece la más lógica.
+
+Sin embargo, imaginaos un proyecto que tarde dos años en desarrollarse, un gran proyecto, en el cual hacemos el análisis, el diseño, nos vamos a programar un montón de cosas, hacemos las pruebas, todo va bien, y cuando lo llevemos al cliente, dice, ah, hay un error. Hay un error en el análisis. Tenemos que ver aquí.
+
+Hacemos luego el diseño, desarrollo, pruebas, implantación. Este es el problema de las metodologías encascadas. La aparición de errores o de cambios simplemente nos lleva a repetir muchas de las frases que teníamos ya cerradas.
+
+Y no nos caemos, en todos los proyectos va a haber errores y va a haber cambios. Va a haber errores porque alguien meterá la pata, puede ser tu programando, tu compañero, tu jefe organizando, el cliente diciendo lo que necesita y equivocándose, el diseñador porque la solución no era la óptima, siempre van a surgir errores. Y si no es su género, bueno, porque da el seguro, también hay cambios.
+
+Resulta que hay cambios en la ley, y hace seis meses se hacía de una determinada manera, y ahora hay que hacerlo de otra forma, o ni siquiera una ley. Cambian las necesidades del cliente, o cambian los clientes de mi cliente, o el mercado saca un nuevo competidor, y hay que ajustar ese proyecto y hacer cambios. El problema de las metodologías en cascada es que los cambios o los errores nos salen muy caros.
+
+Para evitar todo esto, pues a finales de los 90 se fueron desarrollando otras metodologías que afrontaban mejor estos problemas. Una de ellas es la metodología en espiral. Después de poder hacer todo el proyecto de una atacada, vamos a hacer primero una primera versión que aporte algo de la funcionalidad que nos piden, aunque no lo tenga todo.
+
+Esa versión la analizamos, la diseñamos, la desarrollamos, la probamos, la instalamos, la implantamos, y ya pedimos el feedback de los usuarios. Hay que corregir esto, hay que corregir lo otro, pero el tiempo es mucho más corto. Podemos hacer, en vez de una aplicación de una sola vez, pues en tres o cuatro versiones, o algunas llegan hasta 25 versiones y se siguen sacando nubes más.
+
+¿Cuál es la ventaja? Pues cuanto más cerca esté la detección del error del modelo en el que se construyó, menos costos es corregirlo. Es decir, si yo estoy programando algo hoy y acabo de medir ahora peor que fecha, el error está en las últimas 25 líneas que escribo. Pero si ahora me llega mi jefe o mi cliente y me dice, oye, hay un error en aquello que hiciste hace seis meses, pues no sé dónde está el error, porque en los últimos meses escribió miles de líneas de código, y ahora yo no me acuerdo de lo que sería el error cuando me lo he programado hace seis meses.
+
+Solo en encontrar por dónde tengo que buscar el error puedo tratar horas o incluso días. Por lo tanto, la estrategia con los errores es, cuanto antes se identifiquen, menos será el coste de corregir. Y la metodología espiral consigue reducir eso bastante.
+
+Hay otra metodología que está basada más todavía en eso. Entonces vamos a ver antes de eso lo que es la metodología extrema, luego vuelvo a la de Scrum. Lo ideal sería detectar errores constantes.
+
+¿Cómo detectamos los errores? Con el testing. Bueno, pues hagamos test inmediatamente. Si tenemos test unitarios que son automáticos, yo puedo programar una pequeña funcionalidad, corregir un pequeño error en el código y probar los test, porque eso es automático y tiene prácticamente coste cero, y detectar enseguida no solo si lo he hecho bien mi corrección, sino si no he roto nada más, lo que llamamos un error de regresión, del código que había.
+
+La programación extrema la propuso Ken Beck en un libro en el año 2000, que se llama Stream Programming Explained, y consiste en todo aquello que son buenas prácticas, vamos a ponerlo al máximo nivel. Por ejemplo, ¿revisar código es bueno? Sí, porque ayuda a mejorar el código y a encontrar los errores, pues a lo bestia. Hagamos per-programming, es decir, pongamos a dos personas, mientras una programa, otra revisa el código.
+
+Per-programming es una técnica de programación que incluye también el cambio de teclado, cuando uno se cansa el otro pasa a programar, donde hay dos programadores, uno revisando y organizando, y otro realmente programando, y conseguimos resultados mucho más productivos que uno solo. ¿El diseño es bueno? Sí, porque cuando diseñamos mejoramos la arquitectura de nuestro sistema, pues refactoricemos cada vez que se realiza, El proyecto consiste en reorganizar el código, y supone deshacer parte del código. Cuando deshacemos parte del código, no sabemos si lo vamos a construir otra vez.
+
+Si lo deshacemos más rápido la segunda vez, pero si no tuviéramos pruebas unitarias, sería imposible, se podría decir que hemos roto algo si seguimos manteniendo la funcionalidad. El resto igual, pues la máxima simplificación posible, vamos a hacer lo que necesitemos, y hagamos las iteraciones muy muy cortas. No hagamos una versión de tres meses, y luego otra de tres meses.
+
+Si podemos, entreguemos el código al cliente cada dos semanas, o mejor aún, que el cliente esté con nosotros viendo cómo desarrollamos el código. Bien, la metodología de Kenvec, la metodología extrema, es más que una metodología, es un conjunto de prácticas que se pueden aplicar para mejorar todo lo que hemos hablado del problema de los errores y de los cambios. Se han organizado en unas metodologías más claras, y con las fases más definidas, y la que más se utiliza es la metodología Scrum.
+
+Scrum es una aplicación de las metodologías extremas. Todas estas metodologías se denominan metodologías ágiles. Pero bueno, veamos cómo funciona Scrum.
+
+En Scrum hay un Product Owner, que es un cliente que conoce lo que quieren, el producto que queremos desarrollar. Se reúne con el equipo de desarrolladores, y lo que hacen es redactar el Product Backlog, que es un conjunto de requerimientos de lo que tendría que tener la aplicación. Lo que le pide el equipo al Product Owner es que lo priorice, que es lo más importante para ti, lo menos importante, y ponlos en orden.
+
+A partir del Product Backlog, empezamos las iteraciones. Una iteración dura entre una y cuatro semanas. Cuatro es mucho, una es poco, puede ser dos semanas.
+
+Empezamos reuniéndonos el Product Owner con el equipo, porque el equipo no tiene grados. Todos son programadores y no hay jefe ni nada parecido. Se le pide al Product Owner que diseñe lo que quiere que hagamos en estas dos primeras semanas.
+
+¿Qué es lo más importante para ti? O dicho de otra forma, si dentro de dos semanas no trabajamos lo que intentamos, ¿qué gustaría que dejásemos hecho? Estas son las tareas que entran en la planificación del sprint, a lo que vamos a decir el sprint para que lo que quiera hacer. A partir de ahí, cada miembro del equipo se siga a las tareas que quiere. Yo quiero hacer esta parte, yo cojo esta otra.
+
+Con la única obligación de colaborar con el resto del equipo, es decir, de echar una mano cuando te lo piden, o de pedir ayuda cuando la necesites. Y ahí empieza el ciclo de desarrollo. En este ciclo de desarrollo, cada día, se reúne el equipo con el Scrum Master.
+
+El Scrum Master no es el jefe, es alguien que conoce la metodología y se encarga de que saquen las cosas bien, es decir, que aplique bien la metodología, pero no manda. El equipo es autogestionado. En esta reunión del Daily Scrum Meeting, cada uno de los programadores, esto se repite entre 10, 5 o 10 minutos, dice qué es lo que hizo el día anterior y qué problemas está teniendo.
+
+¿En qué estructuras se está bloqueando? Solamente esto, en la primera de 5 o 10 minutos. Y a partir de ahí, se planifica lo que hay que hacer en la semana y lo volvemos a trabajar. Al cabo de dos semanas, cuando termina el sprint, hay un extinto interview, que consiste en una reunión con el Product Owner, en la que se muestra lo que hemos conseguido.
+
+Esa reunión traerá cambios que haya que hacer, mejoras, correcciones de errores, que irán al Product Blog. Y ya veremos si nos metemos con el siguiente sprint. Eso depende de lo que hagamos en el Daily Scrum Meeting.
+
+Una vez que hemos terminado la reunión del Sprint Review, hacemos el sprint retrospectivo. Nos reunimos con el equipo Scrum Master y vemos qué hemos hecho bien o mal en la aplicación de la metodología. Hemos hecho bien la prisión, el sprint debería funcionar de esta manera, y corregimos lo que tengamos que corregir.
+
+Y al cabo de unas cuantas iteraciones, tendremos acabado el proyecto. Esa es la metodología de Scrum. Con eso terminamos nuestro curso de Ingeniería y Software.
+
+Tenemos metodologías tradicionales cascadas de una serie de actividades. Tenemos metodologías iterativas, como son la metodología en espiral, y metodologías ágiles, como es la parte de Scrum. Nos queda por ver las herramientas que utilizamos en el desarrollo de software.
+
+Aquí el objetivo es ser capaces de evaluar qué nos aportan las herramientas que utilizamos cuando creamos aplicaciones informáticas. Y lo vamos a ver estructurado en las fases del ciclo de vida que hemos visto anteriormente. Por ejemplo, cuando hacemos análisis, tenemos que entender qué es lo que quiere el cliente.
+
+Para eso utilizamos técnicas que se llaman casos de uso, historias de usuario, gestión de requerimientos, que básicamente apuntamos, lo que estáis viendo aquí, por ejemplo, es esta parte de aquí, es una historia de usuario, yo como jefe de cuentas o jefe de clientes o como responsable de ventas, quiero que la aplicación pueda hacer esto, esto y lo otro. Y los criterios de aceptación, estaré contento si la aplicación me permite apuntar cuando me llama un cliente qué es lo que ha hecho, o me enseña un histórico de pedidos. Los casos de uso son mucho más formales, establecen también una serie de procesos, de pasos, que es lo que tiene que hacer el cliente para que no funcione.
+
+Este proceso es muy sencillo, usamos casos de uso, y si es más informal, historias de usuario. Casos de uso están asociados a metodologías más tradicionales y las historias de usuario a metodologías más rápidas. Y de alguna forma apuntamos los requerimientos, que es lo que nos pide el cliente, los que vamos a aceptar, los que no se van a poder desafiar por problemas de tiempo o problemas técnicos, y los que ya están realizados.
+
+Para eso utilizamos lo que se llama un tablero de Kanban, en lo que están pendientes estos requerimientos de estudio, estos son los que estamos viendo, estos son los que ya hemos trabajado, o los que incluso ya hemos programado, si fuera el caso. Y esto último que veis aquí es un diagrama de casos de uso que aprenderemos a hacerlo más adelante. Para esto, para hacer diagramas, tenemos herramientas como draw.io, como Microsoft Vision, y para gestión de proyectos, se utilizan mucho estos tableros de Kanban en aplicaciones informáticas como Jira o Trello.
+
+Pero si el proyecto es pequeñazo, lo puedes hacer en un corcho, tal cual. En la segunda fase, en la de diseño, utilizamos técnicas de representación. El más habitual es el lenguaje UML, que es el Unified Modelling Language, que son gráficos ya definidos, que todos los programadores entendemos.
+
+Diagramas de casos, diagramas de frecuencias, diagramas de interacción, diagramas de despliegue. Esto que estamos viendo aquí, es un diagrama de casos. Viendo esto, seríamos capaces de programarlo en la aplicación.
+
+Tendremos que estudiarlo. También hay herramientas o técnicas para el diseño de interfaces de usuario, la User Experience, como Figma y demás. Esto que veis aquí es un boceto de una interfaz de usuario.
+
+Utilizamos herramientas para hacer estos bocetos. Y también hay herramientas específicas para el diseño de base de datos. Esto que tenéis aquí es un diagrama de relación que veréis en base de datos.
+
+Para diagramar utilizamos Draw.io. También hay una aplicación que se llama Día, que funciona muy bien. Para bocetos podemos utilizar Figma. Para el teatro de relación MySQL Workbench.
+
+También te va en una pizarra o una servilleta donde lo escribas, según el tamaño y el alcance del proyecto. En la fase de construcción es donde más herramientas vamos a utilizar y donde más nos vamos a meter. Tenemos que hacer dos cosas, programar y depurar, que se hacen juntas y a la vez.
+
+Las pruebas también deberían estar integradas pero las vamos a ver más adelante. Para eso utilizamos entornos integrados de desarrollo, los IDEs, que son el objeto de este módulo, compiladores, linkadores, intérpretes, máquinas virtuales, los frameworks, que nos dan un entorno con el que podemos programar determinados conjuntos, por ejemplo, si hacemos aplicaciones web para Python podemos utilizar Django o si las estamos haciendo con Java podríamos utilizar Spring Boot. También utilizamos contenedores para simular entornos de despliegue, que son como pequeñas máquinas virtuales y necesitaremos, seguro, un sistema para el control de versiones, lo habitual es el git, y nosotros utilizaremos remotamente gitlab o gitlab y un sistema para guardar las copias de seguridad de nuestro código.
+
+Tenemos que conocer que existen estas herramientas y luego veremos cómo las evaluamos. También tendremos que hacer pruebas. Cuando hacemos testing, utilizamos herramientas según el tipo de test que vamos a hacer. 
+
+Hablaremos de JUnit, para lo que son pruebas unitarias de un único componente, de una única función, pero en la parte web utilizamos mucho Postman, para el curso que viene, que nos permite hacer peticiones a páginas web, a servidores web, y hacer pruebas con esas peticiones. Para el tema de seguridad podemos utilizar Personal Cube, y otra aplicación interesante es Selenium, que nos permite hacer pruebas automáticas sobre una interfaz. Simular clics, envíos de datos, rellenar campos, desplegar combo box, utilizando siempre pruebas automáticas que nos facilitan repetir una y otra vez las pruebas.
+
+En la fase de implantación utilizamos otras herramientas. Puede que implantemos en un cloud o en Amazon Web Services, Azure, o otro tipo de cloud, o que utilicemos contenedores, o que despleguemos directamente a nuestros servidores, por lo cual no tendremos que terminar esto, pero no es lo mismo hacer un despliegue en un servidor, instalando Apache, MySQL, PHP, y hacerlo sobre una infraestructura Azure, donde tú configuras la máquina como plataformas a service lo que necesitas, o algún otro servicio. Y nos queda la fase de mantenimiento que es lo que tenemos aquí.
+
+Aquí hay comunicación. En la fase de mantenimiento tenemos que hacer la gestión de incidencias. Los usuarios nos dicen qué es lo que está pasando, y utilizamos herramientas para apuntarlo, hacer un seguimiento, apuntar cuándo está la corrección, y la información adicional que necesitemos.
+
+Y estas herramientas que son en casa, son herramientas que utilizamos habitualmente, pues las que utilizamos para comunicar con el equipo, Meetings, correos electrónicos, Google Chat, y para guardar documentación, habitualmente se utiliza Wiki, como MediaWiki, o como Confluence. Estas son las herramientas más habituales. En definitiva, hemos visto qué es el ordenador y cómo se relaciona con los programas, cuáles son los lenguajes de programación que vamos a utilizar y cómo los vamos a clasificar, cuáles son las actividades para desarrollar una aplicación informática, ejecutar un proyecto, la estructura en lo que llamamos ingeniería de software y las metodologías asociadas, y qué herramientas podemos utilizar en cada una de esas fases.
+
+Eso es todo. Gracias.
+
