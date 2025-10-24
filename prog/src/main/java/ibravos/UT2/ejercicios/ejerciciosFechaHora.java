@@ -135,7 +135,7 @@ public class ejerciciosFechaHora {
         int diasDelMes = fecha2.lengthOfMonth();
         LocalDate ultimoDia = fecha2.withDayOfMonth(diasDelMes);
 
-        System.out.println("Año bisiesto: " + ( bisiesto ? "Si" : "No" ) );
+        System.out.println("Aho bisiesto: " + ( bisiesto ? "Si" : "No" ) );
         System.out.println("Días en el mes: " + diasDelMes);
         System.out.println("Último día del mes: " + ultimoDia);
 

@@ -18,7 +18,7 @@
             </nav>
 	</header><hr>
 	<main>
-        <article>
+        <aside>
             <table>
                 <th>Contenido del blog</th>
                 <tr><td>Visual Studio Code</td></tr>
@@ -27,43 +27,41 @@
                 <tr><td>HTML</td></tr>
                 <tr><td>CSS</td></tr>
             </table>
-        </article>
+        </aside>
         <article>
             <h3>Sugerencias</h3>
             <form method="post" action = "https://lmsgi.luisferreira.top/recibe_formulario.php">
 
-            <p>NIF o NIE: <input type="text" name="nif" maxlength="9"/></p>    
-            <p>Nombre: <input type="text" name="nombre" size="40"></p>
-            <p>Usuario: <input type="text" name="Usuario" size="40"></p>
-			<p>Contraseña: <input type="password" name="password" minlength="8"></p>
-            <p>Año de nacimiento: <input type="date" name="nacimiento"></p>
-            <p>Sexo:<br>
-				<input type="radio" name="sexo"> Hombre<br>
-				<input type="radio" name="sexo"> Mujer<br>
-				<input type="radio" name="sexo"> No especifico<br>
-            </p>
-            <p>Selecciona de quien visita: <select name="menu">
-				<option value="0">...</option>
-				<option value="Persona">Persona</option>
-				<option value="Empresa">Empresa</option>
-            </select></p>
-            <p>Fecha de visita: <input type="date" name="fecha"></p>
-			<p>Hora de visita: <input type="time" name="hora"></p>
-            <p>Tipo de consulta: <br>
+                <p>NIF o NIE: <input type="text" name="nif" maxlength="9"/></p>    
+                <p>Nombre: <input type="text" name="nombre" size="40"></p>
+                <p>Usuario: <input type="text" name="Usuario" size="40"></p>
+			    <p>Contraseña: <input type="password" name="password" minlength="8"></p>
+                <p>Año de nacimiento: <input type="date" name="nacimiento"></p>
+                <p>Sexo:<br>
+			    	<input type="radio" name="sexo"> Hombre<br>
+			    	<input type="radio" name="sexo"> Mujer<br>
+			    	<input type="radio" name="sexo"> No especifico<br>
+                </p>
+                <p>Selecciona de quien visita: <select name="menu">
+			    	<option value="0">...</option>
+			    	<option value="Persona">Persona</option>
+			    	<option value="Empresa">Empresa</option>
+                </select></p>
+                <p>Fecha de visita: <input type="date" name="fecha"></p>
+			    <p>Hora de visita: <input type="time" name="hora"></p>
+                <p>Tipo de consulta: <br>
 					<input type="radio" name="consulta" value="1">Consulta personal<br>
 					<input type="radio" name="consulta" value="2">Consulta de empleo<br>
-			</p>
-            <p>Indique si le ha gustado: <br>
+			    </p>
+                <p>Elija un color que quiera ver en el blog proximamente: <input type="color" name="colorElegido"></p>
+                <p>Indique si le ha gustado: <br>
 					<input type="range" name="rango">
 				</p>
                 <p>Algún lenguaje que quiera ver en el blog: <br />
-				<textarea name="texto" rows="10" cols="40">Escriba algo</textarea></p>
-                <p>
-                <button type="submit" value="Enviar">Enviar</button>
-                <button type="reset">Restablecer</button>
-
-                
-
+				    <textarea name="texto" rows="10" cols="40">Escriba algo</textarea>
+                </p>
+                <p><button type="submit" value="Enviar">Enviar</button>
+                    <button type="reset">Restablecer</button>
                 </p>
             </form>
         </article>
