@@ -1,11 +1,13 @@
-package ibravos.UT2.ejerciciosWrappers;
+package ibravos.UT2.ejercicios;
 
 import java.util.Scanner;
 
 public class ejerciciosWrappers {
     public static void main(String[] args) {
-		
-		//INTEGER
+
+        System.out.println("-------Integer---------------------------");
+
+        //INTEGER
         // 1. Declara una variable Integer llamada num con valor 25 e imprime su valor por consola usando System.out.println().
         Integer num = 25;
         System.out.println(num);
@@ -26,8 +28,10 @@ public class ejerciciosWrappers {
         int numero = Integer.parseInt(entrada);
         int resultado = numero * 2;
         System.out.println("El número multiplicado por 2 es: " + resultado);
-		
-		//FLOAT
+
+        System.out.println("-------Float---------------------------");
+
+        //FLOAT
         // 5. Declara un objeto Float con el valor 3.14f e imprime su valor con System.out.printf() mostrando dos decimales.
         Float num1 = 3.14f;
         System.out.printf("%.2f%n", num1);
@@ -46,8 +50,10 @@ public class ejerciciosWrappers {
         Float obj2 = 6f;
         int result = obj1.compareTo(obj2);
         System.out.println(result);
-		
-		//DOUBLE
+
+        System.out.println("-------Double---------------------------");
+
+        //DOUBLE
         // 9. Declara una variable Double con valor 12.3456 e imprime su valor redondeado usando Math.round().
         Double num2 = 12.3456;
         System.out.println( Math.round(num2) );
@@ -67,6 +73,7 @@ public class ejerciciosWrappers {
         int resultado2 = nume1.compareTo( nume2 );
         System.out.println( resultado );
 
+        System.out.println("-------Boolean---------------------------");
 
         //BOOLEAN
         // 13. Crea un objeto Boolean con el valor true y muestra su valor primitivo con booleanValue().
@@ -89,8 +96,10 @@ public class ejerciciosWrappers {
         Boolean objeto1 = true;
         Boolean objeto2 = false;
         System.out.println( "El resultado es: " + objeto1.equals(objeto2) );
-		
-		//STRING
+
+        System.out.println("-------String---------------------------");
+
+        //STRING
         // 17. Declara una variable String llamada texto con el valor "Java" e imprime su longitud usando length().
         String texto = "Java";
         System.out.println( texto.length() );
