@@ -6,9 +6,7 @@ package ibravos.UT2.ejercicios;
 import java.util.Scanner;
 
 public class Dojo3 {
-
 	static int a;
-	
 	static int puntos = 0;
 	static int total = 0;
 	static Scanner sc = new Scanner(System.in);
