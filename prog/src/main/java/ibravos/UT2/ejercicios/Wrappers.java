@@ -2,7 +2,7 @@ package ibravos.UT2.ejercicios;
 
 import java.util.Scanner;
 
-public class ejerciciosWrappers {
+public class Wrappers {
     public static void main(String[] args) {
 
         System.out.println("-------Integer---------------------------");

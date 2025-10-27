@@ -3,7 +3,7 @@ package ibravos.UT2.ejercicios;
 import java.util.Scanner;
 import java.util.Random;
 
-public class ejerciciosMathRandom {
+public class MathRandom {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

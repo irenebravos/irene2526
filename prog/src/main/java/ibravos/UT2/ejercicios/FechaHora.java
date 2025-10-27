@@ -8,7 +8,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 
-public class ejerciciosFechaHora {
+public class FechaHora {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

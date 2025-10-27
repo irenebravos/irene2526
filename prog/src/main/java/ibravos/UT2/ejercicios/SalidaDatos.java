@@ -1,6 +1,6 @@
 package ibravos.UT2.ejercicios;
 
-public class ejerciciosSalidaDatos {
+public class SalidaDatos {
     public static void main(String[] args) {
 
         //1. Escribe dos sentencias: una con System.out.print("Hola"); y otra con System.out.println(" mundo");. Observa las diferencias.

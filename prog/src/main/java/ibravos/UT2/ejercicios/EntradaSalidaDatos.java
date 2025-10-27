@@ -1,6 +1,6 @@
 package ibravos.UT2.ejercicios;
 
-public class ejerciciosEntradaSalidaDatos {
+public class EntradaSalidaDatos {
     public static void main(String[] args) {
 
         //1. Declara un Scanner para leer desde teclado. Pide el nombre del usuario y guárdalo en una variable String. Luego muestra: "Hola, [nombre]".
