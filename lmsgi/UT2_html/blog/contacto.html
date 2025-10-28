@@ -3,69 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Lenguajes de programacion</title>
 	<link rel="stylesheet" type="text/css" href="https://luisferreira.top/2024/assets/lmsgi/default.css" media="screen" />
 </head>
-<body><hr>
+<body><hr />
 	<header>
-        <h1><b>Blog de info del curso 25-26</b></h1>
+        <h1><b>Lenguajes de Programacion</b></h1>
             <h2><a href="https://github.com/irenebravos/irene2526">GitHub</a></h2>
 			<p>En esta página se verá el contenido base sobre el curso 25-26 de DAW1.</p>
             <nav>
-                <div><a href="index.html">Página principal</a></div><br>
+                <div><a href="index.html">Página principal</a></div>
                 <div><a href="contacto.html">Contacto</a></div>
-                <hr>
+                <hr />
             </nav>
-	</header><hr>
+	</header><hr />
 	<main>
         <aside>
-            <table>
-                <th>Contenido del blog</th>
-                <tr><td>Visual Studio Code</td></tr>
-                <tr><td>Eclipse</td></tr>
-                <tr><td>IntelliJ IDEA</td></tr>
-                <tr><td>HTML</td></tr>
-                <tr><td>CSS</td></tr>
-            </table>
+            <ol>
+                <h3>Contenido del blog</h3>
+                <li>Visual Studio Code</li>
+                <li>Eclipse</li>
+                <li>IntelliJ IDEA</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ol>
         </aside>
         <article>
             <h3>Sugerencias</h3>
             <form method="post" action = "https://lmsgi.luisferreira.top/recibe_formulario.php">
-
-                <p>NIF o NIE: <input type="text" name="nif" maxlength="9"/></p>    
-                <p>Nombre: <input type="text" name="nombre" size="40"></p>
-                <p>Usuario: <input type="text" name="Usuario" size="40"></p>
-			    <p>Contraseña: <input type="password" name="password" minlength="8"></p>
-                <p>Año de nacimiento: <input type="date" name="nacimiento"></p>
-                <p>Sexo:<br>
-			    	<input type="radio" name="sexo"> Hombre<br>
-			    	<input type="radio" name="sexo"> Mujer<br>
-			    	<input type="radio" name="sexo"> No especifico<br>
+                <p><label for="nif">NIF o NIE:</label> <input type="text" id="nif" name="nif" maxlength="9"/></p>    
+                <p><label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" size="40"></p>
+                <p><label for="usuario">Usuario:</label> <input type="text" id="usuario" name="Usuario" size="40"></p>
+                <p><label for="password">Contraseña:</label> <input type="password" id="password" name="password" minlength="8"></p>
+                <p><label for="nacimiento">Año de nacimiento:</label> <input type="date" id="nacimiento" name="nacimiento"></p>
+                <p>Sexo:
+                    <input type="radio" id="sexo_hombre" name="sexo" value="hombre"> <label for="sexo_hombre">Hombre</label>
+                    <input type="radio" id="sexo_mujer" name="sexo" value="mujer"> <label for="sexo_mujer">Mujer</label>
+                    <input type="radio" id="sexo_no" name="sexo" value="no_especifico"> <label for="sexo_no">No especifico</label>
                 </p>
-                <p>Selecciona de quien visita: <select name="menu">
-			    	<option value="0">...</option>
-			    	<option value="Persona">Persona</option>
-			    	<option value="Empresa">Empresa</option>
-                </select></p>
-                <p>Fecha de visita: <input type="date" name="fecha"></p>
-			    <p>Hora de visita: <input type="time" name="hora"></p>
-                <p>Tipo de consulta: <br>
-					<input type="radio" name="consulta" value="1">Consulta personal<br>
-					<input type="radio" name="consulta" value="2">Consulta de empleo<br>
-			    </p>
-                <p>Elija un color que quiera ver en el blog proximamente: <input type="color" name="colorElegido"></p>
-                <p>Indique si le ha gustado: <br>
-					<input type="range" name="rango">
-				</p>
-                <p>Algún lenguaje que quiera ver en el blog: <br />
-				    <textarea name="texto" rows="10" cols="40">Escriba algo</textarea>
+                <p><label for="menu">Selecciona de quien visita:</label> 
+                    <select id="menu" name="menu">
+                        <option value="0">...</option>
+                        <option value="Persona">Persona</option>
+                        <option value="Empresa">Empresa</option>
+                    </select>
                 </p>
-                <p><button type="submit" value="Enviar">Enviar</button>
+                <p><label for="fecha">Fecha de visita:</label> <input type="date" id="fecha" name="fecha"></p>
+                <p><label for="hora">Hora de visita:</label> <input type="time" id="hora" name="hora"></p>
+                <p>Tipo de consulta:
+                    <input type="radio" id="consulta_personal" name="consulta" value="personal"> <label for="consulta_personal">Consulta personal</label>
+                    <input type="radio" id="consulta_empleo" name="consulta" value="empleo"> <label for="consulta_empleo">Consulta de empleo</label>
+                </p>
+                <p><label for="colorElegido">Elija un color que quiera ver en el blog próximamente:</label> 
+                    <input type="color" id="colorElegido" name="colorElegido">
+                </p>
+                <p><label for="rango">Indique si le ha gustado:</label>
+                    <input type="range" id="rango" name="rango">
+                </p>
+                <p><label for="texto">Algún lenguaje que quiera ver en el blog:</label>
+                    <textarea id="texto" name="texto" rows="10" cols="40" placeholder="Escriba algo" required="1"></textarea>
+                </p>
+                <p>
+                    <button type="submit" value="Enviar">Enviar</button>
                     <button type="reset">Restablecer</button>
                 </p>
             </form>
         </article>
-	</main><hr>
+	</main><hr />
 	<footer>Para más información haz click en el enlace del principio.</footer>
 </body>
 </html>
