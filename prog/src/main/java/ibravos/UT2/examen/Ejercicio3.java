@@ -1,5 +1,6 @@
 
 package ibravos.UT2.examen;
+
 import java.util.Scanner;
 import java.util.Random;
 public class Ejercicio3{
