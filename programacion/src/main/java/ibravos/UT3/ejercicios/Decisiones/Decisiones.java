@@ -1,0 +1,50 @@
+package ibravos.UT3.ejercicios.Decisiones;
+
+public class Decisiones {
+    public static void main(String[] args) {
+
+        /*Ejercicio 1 --> Comparar dos números e imprimir cuál es mayor.
+        Pide al usuario dos números y determina cuál es mayor.
+        Si ambos son iguales, se muestra un mensaje indicando que no hay diferencia.
+        */
+
+        /*Ejercicio 2 --> Verificar si un número es par o impar.
+        Solicita un número y utiliza la operación módulo (%) para determinar si el número es divisible entre 2.
+        */
+
+        /*Ejercicio 3 --> Determinar si un número es positivo, negativo o cero.
+        Lee un número del usuario y comprueba su signo para mostrar el mensaje adecuado.
+        */
+
+        /*Ejercicio 4 --> Calcular un descuento en base al monto de compra.
+        Imagina que tienes una promoción donde si el monto es mayor a 100, se aplica un 10% de descuento; en caso contrario, no hay descuento.
+        */
+
+        /*Ejercicio 5 --> Calcular el promedio de tres notas y mostrar el resultado (aprobado o reprobado).
+        Se leen tres notas y se calcula el promedio. Si el promedio es mayor o igual a 5 (en una escala de 0 a 10), se considera aprobado.
+        */
+
+        /*Ejercicio 6 --> Convertir nota numérica a calificación con switch.
+        Pide en un número entero entre 1 y 5, se asigna una calificación textual (Ejemplo: 1 = Muy Deficiente, 5 = Excelente).
+        */
+
+        /*Ejercicio 7 --> Menú de opciones simples con switch.
+        Despliega un menú para realizar una operación matemática específica según la opción elegida por el usuario: sumar, restar, multiplicar o dividir dos números.
+        */
+
+        /*Ejercicio 8 --> Determinar si un año es bisiesto con if-else.
+        Pide al usuario un año y calcula si es bisiesto. Se considera un año bisiesto si es divisible entre 4, pero no entre 100, o si es divisible entre 400.
+        Comprueba tu resultado comparándolo con el método isLeapYear.
+        */
+
+        /*Ejercicio 9 --> Categorizar una edad con if-else-if.
+        Dada una edad, mostrar si la persona es niño (0-12), adolescente (13-17), adulto (18-64) o adulto mayor (65+).
+        */
+
+        /*Ejercicio 10 --> Calcular un bono según años de servicio.
+        Si un empleado tiene 5 años o más en la empresa, recibe un bono del 20% de su salario. En caso contrario, el bono es del 10%.
+        */
+
+
+    }
+}

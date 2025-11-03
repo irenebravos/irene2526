@@ -1,6 +1,6 @@
 package ibravos.UT3.ejercicios.Decisiones;
 
-public class Decisiones1 {
+public class DecisionesPDF {
     public static void main(String[] args) {
 
         //1. Leer dos números y deducir si están en orden creciente.
