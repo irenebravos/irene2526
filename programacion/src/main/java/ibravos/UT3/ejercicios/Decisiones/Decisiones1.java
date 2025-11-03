@@ -1,4 +1,4 @@
-package ibravos.UT3.ejercicios;
+package ibravos.UT3.ejercicios.Decisiones;
 
 public class Decisiones1 {
     public static void main(String[] args) {
