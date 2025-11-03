@@ -1,4 +1,4 @@
-package ibravos.UT3.ejercicios.AceptaElReto.P116;
+    package ibravos.UT3.ejercicios.AceptaElReto.P116;
 
 import java.util.Scanner;
 
