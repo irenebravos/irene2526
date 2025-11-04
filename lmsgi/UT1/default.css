@@ -1,39 +1,199 @@
-:root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-}
-
 body {
-  background-color: #bbb;
+    margin: 0;
+    background-color: var(--fondo);
 }
 
-a {
-  padding: 2px 8px;
-  text-decoration: none;
-  color: white;
-  background-color: var(--bs-blue);
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px teal;
+/* ----------------------------------------------------------------------------
+ *  Cabecera y pie (de la web)
+ *---------------------------------------------------------------------------*/
+body > header,
+body > footer {
+    font-size: large;
+    width: 100%;
+}
+
+body > header {
+    background-color: var(--fondoEncabezado);
+}
+
+#texto_cabecera {
+    background-color: var(--fondoEncabezado);
+    color: var(--colorTextoEncabezado);
+    padding: var(--padding);
+}
+
+body > footer {
+    background-color: var(--fondoPie);
+    color: var(--colorTextoPie);
+    padding: var(--padding);
+    width: calc(100% - var(--padding));
+}
+
+/* ----------------------------------------------------------------------------
+ *  Forma de los artÃ­culos
+ *---------------------------------------------------------------------------*/
+article {
+    margin: var(--margin);
+}
+article > header {
+    background-color: var(--fondoEncabezado);
+    color: var(--colorTextoEncabezado);
+    padding: calc(var(--padding) / 2);
+    font-size: medium;
+    text-decoration: underline 0.2em;
+}
+
+article > footer {
+    font-style: italic;
+    color: var(--fondoPie);
+}
+
+/* ----------------------------------------------------------------------------
+ *  Bloque central de la web
+ *---------------------------------------------------------------------------*/
+#pagina {
+    width: 95%;
+}
+
+aside {
+    background-color: var(--fondoBanner);
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 300px;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------------
+ *  MenÃº de navegaciÃ³n
+ *---------------------------------------------------------------------------*/
+nav {
+    /* DistibuciÃ³n flexible y "responsiva" */
+    border: 0px;
+    margin: 1em;
+}
+
+nav > div {
+    background-color: var(--colorBotones);
+    color: var(--textoInvertido);
+    padding: 0.5em 2em;
+    /* Efecto profundidad */
+    box-shadow: 5px 8px 10px var(--corlorSombras);
+}
+
+nav > div a {
+    text-decoration: none;
+    color: var(--textoInvertido);
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------
+ *  Contenido
+ *---------------------------------------------------------------------------*/
+#pagina {
+    border: 0px;
+}
+main > header {
+    background-color: var(--fondoTitulos);
+    color: var(--colorTextoTitulos);
+    font-weight: bold;
+    font-size: large;
+    margin: var(--margin);
+}
+
+/* imagenes */
+.foto_carnet {
+    width: 12dvw;
+    min-width: 100px;
+}
+
+/* tablas */
+table {
+    border: 1px solid var(--blue);
+}
+thead {
+    background-color: #008;
+    color: white;
+    padding: 2em;
+}
+
+thead th {
+    padding: 0.5em 1em;
+}
+
+td {
+    padding-left: 1em;
+}
+
+tr:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+
+/* formularios */
+form {
+    max-width: 90%;
+    margin: 1rem auto;
+    padding 4em;
+    border: 1px solid var(--blue);
+}
+
+form > label {
+    font-weight: bold;
+}
+
+form > input,
+form > textarea {
+    margin: 1rem auto;
+    width: 90%;
+}
+
+form > button {
+    background-color: var(--colorBotones);
+    color: var(--textoInvertido);
+    padding: 0.5em 2em;
+    /* Efecto profundidad */
+    box-shadow: 5px 8px 10px var(--corlorSombras);
+    border: 0;
+    margin: 1em auto;
+    width: 30%;
+    min-width: 100px;
+    max-width: 300px;
+}
+/* ----------------------------------------------------------------------------
+ *  Variables globales
+ *---------------------------------------------------------------------------*/
+:root {
+    /* espacios */
+    --margin: 1em;
+    --padding: 1em;
+
+    /* ubicaciones */
+    --fondo: var(--white);
+    --colorTexto: var(--dark);
+    --fondoTitulos: var(--darkGrey);
+    --colorTextoTitulos: var(--white);
+    --fondoBanner: var(--resaltado);
+    --colorTextoPie: var(--white);
+    --fondoPie: var(--darkGrey);
+    --fondoEncabezado: var(--lightGrey);
+    --colorTextoEncabezado: var(--darkBlue);
+
+    --corlorSombras: var(--grey);
+    --colorBotones: var(--darkBlue);
+    --textoInvertido: var(--white);
+
+    /* colores */
+    --blue: #1e90ff;
+    --darkBlue: #4f46e5;
+    --white: whitesmoke;
+    --lightGrey: #aaa;
+    --grey: grey;
+    --darkGrey: #444;
+    --green: green;
+    --resaltado: yellow;
+    --dark: #222;
 }
