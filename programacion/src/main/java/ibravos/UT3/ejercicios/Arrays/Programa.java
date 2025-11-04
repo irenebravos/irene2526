@@ -1,8 +1,5 @@
 package ibravos.UT3.ejercicios.Arrays;
 
-import com.sun.org.apache.xalan.internal.xsltc.DOM;
-import ibravos.UT2.ejercicios.MathRandom;
-
 public class Programa {
     public static void main(String[] args) {
 
@@ -71,9 +68,9 @@ public class Programa {
 
         //maximo y minimo
         System.out.println( "----------MAXIMO----------" );
-        Integer posicionMAX, posicionMIN;
+        Integer posicionMAX = 0, posicionMIN = 0;
         Float[] array1 = new Float[1000];
-        for ( int i = 0; i < numeros.length; i++ ){
+        for ( int i = 0; i < array1.length; i++ ){
             array1[i] = ( float )( Math.random() * 100f ) -1000;
         }
         Float maximo = 0f;
@@ -83,11 +80,11 @@ public class Programa {
                 posicionMAX = i;
             }
         }
-        System.out.println( "El maximo es: " + maximo + "." );
+        System.out.println( "El maximo es: " + posicionMAX + "." );
 
         System.out.println( "----------MINIMO----------" );
         Float[] array2 = new Float[1000];
-        for ( int i = 0; i < numeros.length; i++ ){
+        for ( int i = 0; i < array2.length; i++ ){
             array2[i] = ( float )( Math.random() * 100f ) -1000;
         }
         Float minimo = 0f;
@@ -97,7 +94,7 @@ public class Programa {
                 posicionMIN = i;
             }
         }
-        System.out.println( "El minimo es: " + minimo + "." );
+        System.out.println( "El minimo es: " + posicionMIN + "." );
 
         //calcula la media de diez notas
         System.out.println( "----------MEDIA DE NOTAS----------" );
