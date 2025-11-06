@@ -1,0 +1,23 @@
+/*Crea un conjunto de divs y span con párrafos lorem ipsum[^1] con fondo de color diferente aplicando los estilos:
+
++ Rojo: `div + span`
++ Verde: `div span`
++ Azul: `div > span`
++ Morado: `div ~ span` que respete que `div + span` siga rojo.*/
+
+
+div span {
+  background-color: green;
+}
+
+div > span {
+  background-color: blue;
+}
+
+div ~ span {
+  background-color: purple;
+}
+
+div + span {
+  background-color: red;
+}

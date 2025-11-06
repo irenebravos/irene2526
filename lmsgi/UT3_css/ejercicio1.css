@@ -1,4 +1,0 @@
-+ Rojo: `div + span`
-+ Verde: `div span`
-+ Azul: `div > span`
-+ Morado: `div ~ span` que respete que `div + span` siga rojo.

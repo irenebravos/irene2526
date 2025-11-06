@@ -1,0 +1,7 @@
+/*Combina Selectores y Pseudo-clases¶
+Crea una lista de elementos (usando <ul> o <ol>).
+Usa nth-child() para aplicar diferentes estilos a los elementos pares e impares.
+Combina esto con :hover para añadir un cambio visual al pasar el ratón.
+Repite con el nth-of-type().*/
+
+

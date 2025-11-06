@@ -1,0 +1,14 @@
+/*Crea unos párrafos lorem ipsum con fondo de color diferente, 
+    utilizando para ello un tipo distinto de modelo de selección de color.
+    Repite el ejercicio mediante variables.*/
+
+
+.hex {
+    background-color: #3498db;
+}
+.rgb {
+    background-color: rgb(231, 76, 60);
+}
+.hsl {
+    background-color: hsl(145, 100%, 50%);
+}
